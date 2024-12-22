@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+uxnsJqvCC0lCammvrUiBcFrmFwu99dJaJXqK8NgAQyQvjfFCJh0g8LvODNpJnNQ8PcPcLv48QCaGdKtYjEf5g==",
+  "dgSpecHash": "CWg0iWTviLMcS37FKINVlspiTe+ch3UImnG6zrTR6KVfPlO4QmTLEu3KnKJho9R88TefBexC2XfF9yVRsKWYWw==",
   "success": true,
   "projectFilePath": "E:\\Dev\\sunway-travel-dev-test\\sunway-travel-dev-test\\sunway-travel-dev-test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jrafa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.20\\microsoft.aspnetcore.openapi.7.0.20.nupkg.sha512",
     "C:\\Users\\jrafa\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\jrafa\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\jrafa\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\jrafa\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\Users\\jrafa\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "C:\\Users\\jrafa\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",

@@ -1,7 +1,8 @@
-using System.Text.Json;
-using HotelApi.Models;
 
-namespace HotelApi.Services
+using Newtonsoft.Json;
+using Models;
+
+namespace Services
 {
     public class DataLoader
     {
@@ -20,7 +21,9 @@ namespace HotelApi.Services
                 var jsonData = File.ReadAllText(filePath);
 
                 // Deserialize into a list of Hotel objects
-                return JsonSerializer.Deserialize<List<Hotel>>(jsonData);
+                var hotels = JsonConvert.DeserializeObject<List<Hotel>>(jsonData);
+                
+                return hotels;
             }
             catch (Exception ex)
             {
