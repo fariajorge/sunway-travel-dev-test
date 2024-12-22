@@ -1,4 +1,4 @@
-namespace HotelApi.Models
+namespace Models
 {
     public class Hotel
     {

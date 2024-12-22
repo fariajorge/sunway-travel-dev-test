@@ -1,25 +1,18 @@
-var builder = WebApplication.CreateBuilder( args );
+using Services;
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
 
+// Path to the hotels.json file
+var jsonFilePath = Path.Combine(Directory.GetCurrentDirectory(), "Data", "hotels.json");
+Console.WriteLine($">>>>>>>>>>>>>>>>>>>>>>>>>>{jsonFilePath}");
+
+// Register DataLoader as a singleton
+builder.Services.AddSingleton(new DataLoader(jsonFilePath));
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if ( app.Environment.IsDevelopment() )
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
+app.UseRouting();
+app.MapControllers(); // Map attribute-based controllers
 
 app.Run();

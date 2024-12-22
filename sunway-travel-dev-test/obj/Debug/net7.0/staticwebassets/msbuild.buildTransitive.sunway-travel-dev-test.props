@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\sunway-travel-dev-test.props" />
+</Project>
