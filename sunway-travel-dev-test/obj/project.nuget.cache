@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SijXi7csoGfxv9waM1InZWqPAFMrZEiF4La7YdW7zWEwyEwPA1i84dqKqvtaQUq3RVOU3yz24I6MwU8qAxrLHQ==",
+  "dgSpecHash": "+uxnsJqvCC0lCammvrUiBcFrmFwu99dJaJXqK8NgAQyQvjfFCJh0g8LvODNpJnNQ8PcPcLv48QCaGdKtYjEf5g==",
   "success": true,
-  "projectFilePath": "E:\\Dev\\sunway-travel-dev-test\\HotelApi\\HotelApi.csproj",
+  "projectFilePath": "E:\\Dev\\sunway-travel-dev-test\\sunway-travel-dev-test\\sunway-travel-dev-test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jrafa\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.20\\microsoft.aspnetcore.openapi.7.0.20.nupkg.sha512",
     "C:\\Users\\jrafa\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
