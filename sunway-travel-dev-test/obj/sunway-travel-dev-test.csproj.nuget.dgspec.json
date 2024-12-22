@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Dev\\sunway-travel-dev-test\\HotelApi\\HotelApi.csproj": {}
+    "E:\\Dev\\sunway-travel-dev-test\\sunway-travel-dev-test\\sunway-travel-dev-test.csproj": {}
   },
   "projects": {
-    "E:\\Dev\\sunway-travel-dev-test\\HotelApi\\HotelApi.csproj": {
+    "E:\\Dev\\sunway-travel-dev-test\\sunway-travel-dev-test\\sunway-travel-dev-test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Dev\\sunway-travel-dev-test\\HotelApi\\HotelApi.csproj",
-        "projectName": "HotelApi",
-        "projectPath": "E:\\Dev\\sunway-travel-dev-test\\HotelApi\\HotelApi.csproj",
+        "projectUniqueName": "E:\\Dev\\sunway-travel-dev-test\\sunway-travel-dev-test\\sunway-travel-dev-test.csproj",
+        "projectName": "sunway-travel-dev-test",
+        "projectPath": "E:\\Dev\\sunway-travel-dev-test\\sunway-travel-dev-test\\sunway-travel-dev-test.csproj",
         "packagesPath": "C:\\Users\\jrafa\\.nuget\\packages\\",
-        "outputPath": "E:\\Dev\\sunway-travel-dev-test\\HotelApi\\obj\\",
+        "outputPath": "E:\\Dev\\sunway-travel-dev-test\\sunway-travel-dev-test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jrafa\\AppData\\Roaming\\NuGet\\NuGet.Config"
