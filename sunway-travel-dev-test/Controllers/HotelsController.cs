@@ -1,8 +1,7 @@
-using System.Text.Json;
-using Services;
 using Microsoft.AspNetCore.Mvc;
+using sunway_travel_dev_test.Services;
 
-namespace Controllers
+namespace sunway_travel_dev_test.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -19,25 +18,39 @@ namespace Controllers
         [HttpGet]
         public IActionResult GetHotels()
         {
-            var hotels = dataLoader.LoadHotels();
-            
-            Console.WriteLine(JsonSerializer.Serialize( hotels ));
-            return Ok(hotels);
+            try
+            {
+                var hotels = dataLoader.LoadHotels();
+                return Ok(hotels);
+            }
+            catch (Exception ex)
+            {
+                // Log error (optional)
+                return StatusCode(500, new { Message = "An error occurred while retrieving hotel data.", Details = ex.Message });
+            }
         }
 
         // GET /api/hotels/{id}
         [HttpGet("{id:int}")]
         public IActionResult GetHotelById(int id)
         {
-            var hotels = dataLoader.LoadHotels();
-            var hotel = hotels.FirstOrDefault(h => h.Id == id);
-
-            if (hotel == null)
+            try
             {
-                return NotFound(new { Message = $"Hotel with ID {id} not found." });
-            }
+                var hotels = dataLoader.LoadHotels();
+                var hotel = hotels.FirstOrDefault(h => h.Id == id);
 
-            return Ok(hotel);
+                if (hotel == null)
+                {
+                    return NotFound(new { Message = $"Hotel with ID {id} not found." });
+                }
+
+                return Ok(hotel);
+            }
+            catch (Exception ex)
+            {
+                // Log error (optional)
+                return StatusCode(500, new { Message = "An error occurred while retrieving hotel data.", Details = ex.Message });
+            }
         }
     }
 }

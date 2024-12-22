@@ -1,4 +1,4 @@
-namespace Models
+namespace sunway_travel_dev_test.Models
 {
     public class Hotel
     {
